@@ -1017,10 +1017,10 @@ var _DoHeaders = function(text) {
 			//return hashBlock("<h" + h_level + ' id="' + headerId(m2) + '">' + _RunSpanGamut(m2) + "</h" + h_level + ">");
 			if(h_level>3) //1,2 => [big], 3 => [small]
 				return hashBlock(_RunSpanGamut(m2));
-			else if(h_level == 3)
-				return hashBlock("[small]"+_RunSpanGamut(m2)+"[/small]");
+			else if(h_level == 1)
+				return hashBlock("[color=green]▌[/color] [b]"+_RunSpanGamut(m2)+"[/b]");				
 			else //h_level won't be negative
-				return hashBlock("[big]"+_RunSpanGamut(m2)+"[/big]");
+				return hashBlock("[b]"+_RunSpanGamut(m2)+"[/b]");
 		});
 
 	function headerId(m) {
