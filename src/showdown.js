@@ -1047,7 +1047,7 @@ var _DoHeaders = function(text) {
 			if(h_level>3) //1,2 => [big], 3 => [small]
 				return hashBlock(_RunSpanGamut(m2));
 			else if(h_level == 1 || h_level == 2)
-				return hashBlock("[color=green]▌[/color] [b]"+_RunSpanGamut(m2)+"[/b]");				
+				return hashBlock("[color=#2a88f1]▌[/color] [b]"+_RunSpanGamut(m2)+"[/b]");
 			else //h_level won't be negative
 				return hashBlock("[b]"+_RunSpanGamut(m2)+"[/b]");
 		});
